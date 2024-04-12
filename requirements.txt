@@ -1,3 +1,3 @@
-click
-tiktoken
-pywin32
+click==8.1.7
+tiktoken==0.6.0
+pywin32==306
