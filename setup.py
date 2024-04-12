@@ -6,9 +6,9 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
-        'click',
-        'tiktoken',
-        'pywin32'
+        'click==8.1.7',
+        'tiktoken==0.6.0',
+        'pywin32==306'
     ],
     entry_points={
         'console_scripts': [
