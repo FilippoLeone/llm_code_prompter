@@ -16,25 +16,25 @@ This utility is particularly useful for developers working with GPT-4 who need t
 
 1. **Clone the repository:**
 
-git clone https://github.com/FilippoLeone/llm-code-prompter.git
+`git clone https://github.com/FilippoLeone/llm-code-prompter.git`
 
 markdown
 
 2. **Navigate to the project directory:**
 
-cd llm-code-prompter
+`cd llm-code-prompter`
 
 markdown
 
 3. **Install the required dependencies:**
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 markdown
 
 4. **Install the package in editable mode:**
 
-pip install -e .
+`pip install -e .`
 
 This allows you to modify the project and see changes without reinstalling the package.
 
@@ -42,11 +42,11 @@ This allows you to modify the project and see changes without reinstalling the p
 
 Run the script by navigating to the project directory and using the following command:
 
-llm_code_prompter [target_folder]
+`llm_code_prompter [target_folder]`
 
 or
 
-python -m src.main [target_folder]
+`python -m src.main [target_folder]`
 
 Where `[target_folder]` is the path to the directory containing the files you want to include in your prompt.
 
