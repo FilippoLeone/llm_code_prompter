@@ -18,19 +18,13 @@ This utility is particularly useful for developers working with GPT-4 who need t
 
 `git clone https://github.com/FilippoLeone/llm-code-prompter.git`
 
-markdown
-
 2. **Navigate to the project directory:**
 
 `cd llm-code-prompter`
 
-markdown
-
 3. **Install the required dependencies:**
 
 `pip install -r requirements.txt`
-
-markdown
 
 4. **Install the package in editable mode:**
 
