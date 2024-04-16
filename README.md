@@ -32,7 +32,7 @@ This allows you to modify the project and see changes without reinstalling the p
 
 Run the script by navigating to the project directory and using the following command:
 
-`llm_code_prompter [target_folder]`
+`llm_code_prompter [target_folder] [file_pattern] [exclude_pattern] [platform]`
 
 Where `[target_folder]` is the path to the directory containing the files you want to include in your prompt.
 
