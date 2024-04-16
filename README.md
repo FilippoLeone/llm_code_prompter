@@ -50,6 +50,8 @@ Example usage:
 
 The script will read the contents of the specified directory, including any optional files (like OBJECTIVE.md and PROMPT.md), and then concatenate the contents of all the matching Python files. The resulting text will be copied to the system clipboard, so you can paste it into your LLM prompt.
 
+![immagine](https://github.com/FilippoLeone/llm_code_prompter/assets/29985813/b2ddc615-0394-4b6a-977f-573554a3f415)
+
 ## Development
 
 This project is developed using Python 3.9+. It adheres to PEP standards and utilizes type hinting to ensure code quality and maintainability.
