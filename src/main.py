@@ -1,9 +1,9 @@
 import click
 import logging
-import platform
 from pathlib import Path
 from .file_reader import read_file
 from .structure_generator import create_prompt, list_directory_structure
+import platform
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -26,7 +26,8 @@ def print_ascii_art():
 @click.argument('file_pattern', type=str, default="*.py")
 @click.argument('exclude_pattern', type=str, default="")
 @click.argument('platform', type=str, default="")
-def main(target_folder: str, file_pattern: str, exclude_pattern: str, platform: str):
+@click.option('--verbose', is_flag=True, help='Print the final prompt')
+def main(target_folder: str, file_pattern: str, exclude_pattern: str, platform: str, verbose: bool):
     print_ascii_art()
     folder_path = Path(target_folder)
 
@@ -62,7 +63,9 @@ def main(target_folder: str, file_pattern: str, exclude_pattern: str, platform: 
         logging.error(f"Unsupported platform: {platform}")
 
     print("\nFinal Prompt for GPT-4 has been copied to the clipboard. You can paste it anywhere using Ctrl+V.\n")
-    print(prompt)
+
+    if verbose:
+        print(prompt)
 
 def append_optional_contents(folder_path, full_prompt):
     # Check for OBJECTIVE.md and PROMPT.md and prepend if they exist
