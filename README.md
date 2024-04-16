@@ -22,10 +22,6 @@ This utility is particularly useful for developers working with GPT-4 who need t
 
 `cd llm-code-prompter`
 
-3. **Install the required dependencies:**
-
-`pip install -r requirements.txt`
-
 4. **Install the package in editable mode:**
 
 `pip install -e .`
