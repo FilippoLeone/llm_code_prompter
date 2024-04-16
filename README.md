@@ -34,10 +34,6 @@ Run the script by navigating to the project directory and using the following co
 
 `llm_code_prompter [target_folder]`
 
-or
-
-`python -m src.main [target_folder]`
-
 Where `[target_folder]` is the path to the directory containing the files you want to include in your prompt.
 
 ## Development
