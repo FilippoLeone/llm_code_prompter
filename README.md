@@ -32,9 +32,25 @@ This allows you to modify the project and see changes without reinstalling the p
 
 Run the script by navigating to the project directory and using the following command:
 
-`llm_code_prompter [target_folder]`
+`llm_code_prompter [target_folder] [file_pattern] [exclude_pattern] [platform]`
 
-Where `[target_folder]` is the path to the directory containing the files you want to include in your prompt.
+Where:
+
+    [target_folder] is the path to the directory containing the files you want to include in your prompt.
+    [file_pattern] is the pattern to match the files you want to include (default is "*.py").
+    [exclude_pattern] is a comma-separated list of file paths or patterns to exclude (default is empty).
+    [platform] is the target platform for the clipboard operation (default is determined automatically).
+
+Example usage:
+
+    llm_code_prompter /path/to/directory
+    llm_code_prompter /path/to/directory "*.py"
+    llm_code_prompter /path/to/directory "*.py" "tests/,__pycache__/"
+    llm_code_prompter /path/to/directory "*.py" "tests/,__pycache__/" win32
+
+The script will read the contents of the specified directory, including any optional files (like OBJECTIVE.md and PROMPT.md), and then concatenate the contents of all the matching Python files. The resulting text will be copied to the system clipboard, so you can paste it into your LLM prompt.
+
+![immagine](https://github.com/FilippoLeone/llm_code_prompter/assets/29985813/b2ddc615-0394-4b6a-977f-573554a3f415)
 
 ## Development
 
