@@ -38,7 +38,7 @@ Where `[target_folder]` is the path to the directory containing the files you wa
 
 ## Development
 
-This project is developed using Python 3.8+. It adheres to PEP standards and utilizes type hinting to ensure code quality and maintainability.
+This project is developed using Python 3.9+. It adheres to PEP standards and utilizes type hinting to ensure code quality and maintainability.
 
 ## License
 
